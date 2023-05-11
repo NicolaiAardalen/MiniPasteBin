@@ -33,13 +33,31 @@ namespace MiniPasteBin
         protected global::System.Web.UI.WebControls.TextBox InsertTextBox;
 
         /// <summary>
-        /// Private control.
+        /// PrivateCheckBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox Private;
+        protected global::System.Web.UI.WebControls.CheckBox PrivateCheckBox;
+
+        /// <summary>
+        /// PrivatePasswordTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox PrivatePasswordTextBox;
+
+        /// <summary>
+        /// BurnAfterRedingCheckBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox BurnAfterRedingCheckBox;
 
         /// <summary>
         /// CreateNewPasteBinButton control.

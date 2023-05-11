@@ -45,6 +45,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BusinessObjects\BusinessObjects.csproj">
+      <Project>{ce623bf3-a258-4f60-a66a-35f071af93de}</Project>
+      <Name>BusinessObjects</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DatabaseLayer\DatabaseLayer.csproj">
       <Project>{e7df64f7-19d1-4087-8983-972dae909085}</Project>
       <Name>DatabaseLayer</Name>
