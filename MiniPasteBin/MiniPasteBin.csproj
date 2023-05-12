@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.aspx" />
+    <Content Include="PasswordPrivate.aspx" />
     <Content Include="PasteBins.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -78,6 +79,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PasswordPrivate.aspx.cs">
+      <DependentUpon>PasswordPrivate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PasswordPrivate.aspx.designer.cs">
+      <DependentUpon>PasswordPrivate.aspx</DependentUpon>
     </Compile>
     <Compile Include="PasteBins.aspx.cs">
       <DependentUpon>PasteBins.aspx</DependentUpon>

@@ -37,5 +37,10 @@ namespace BusinessLayer
         {
             dbl.BurnAfterReadingDeleteWhereGUID(GUIDFromDB);
         }
+
+        public void UpdateLastVisited(string GUID)
+        {
+            dbl.UpdateLastVisited(GUID);
+        }
     }
 }

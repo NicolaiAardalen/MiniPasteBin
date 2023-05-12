@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using BusinessLayer;
@@ -16,9 +17,11 @@ namespace MiniPasteBin
         {
             if (!IsPostBack)
             {
+                PrivateCheck();
                 GetDataFromPasteBinWhereGuid();
                 GetDatedFormDBIntoLabel();
                 BurnAfterReading();
+                UpdateLastVisited();
             }
         }
 
@@ -92,6 +95,26 @@ namespace MiniPasteBin
                 }
             }
             catch (Exception) { };
+        }
+
+        public void UpdateLastVisited()
+        {
+            var GUIDfromReqQueStr = Request.QueryString["GUID"];
+
+            dbl.UpdateLastVisited(GUIDfromReqQueStr);
+        }
+
+        public void PrivateCheck()
+        {
+            if (HttpContext.Current.User.Identity.IsAuthenticated)
+            {
+                FormsAuthentication.SignOut();
+            }
+        }
+
+        protected void BackButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Default.aspx");
         }
     }
 }

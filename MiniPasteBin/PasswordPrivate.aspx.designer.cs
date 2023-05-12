@@ -11,7 +11,7 @@ namespace MiniPasteBin
 {
 
 
-    public partial class PasteBins
+    public partial class PasswordPrivate
     {
 
         /// <summary>
@@ -33,39 +33,21 @@ namespace MiniPasteBin
         protected global::System.Web.UI.WebControls.Button BackButton;
 
         /// <summary>
-        /// PasteBinTextBox control.
+        /// PasswordTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox PasteBinTextBox;
+        protected global::System.Web.UI.WebControls.TextBox PasswordTextBox;
 
         /// <summary>
-        /// CreationDatelabel control.
+        /// CheckPasswordButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label CreationDatelabel;
-
-        /// <summary>
-        /// LastVisitedLabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LastVisitedLabel;
-
-        /// <summary>
-        /// ExpirationDateLabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label ExpirationDateLabel;
+        protected global::System.Web.UI.WebControls.Button CheckPasswordButton;
     }
 }

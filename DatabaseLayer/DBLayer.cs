@@ -121,5 +121,21 @@ namespace DatabaseLayer
             }
             catch (ArgumentOutOfRangeException) { }
         }
+
+        public void UpdateLastVisited(string GUID)
+        {
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand($"UPDATE PasteBinTable SET LastVisited = @dtn WHERE GUID = @guid;", conn);
+
+                cmd.Parameters.AddWithValue("dtn", DateTime.Now);
+                cmd.Parameters.AddWithValue("guid", GUID);
+
+                cmd.ExecuteNonQuery();
+                conn.Close();
+            }
+            catch (ArgumentOutOfRangeException) { }
+        }
     }
 }
